@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExampleSideSheetMaterialDesign</string>
+    <string name="title">HOJA LATERAL</string>
+    <string name="action">Entendido</string>
+    <string name="action_open_modal">Abrir Hoja Lateral</string>
+    <string name="supporting_text">SideSheet Material Design</string>
+    <string name="action_open_sideSheetComposeDialog_modal">Abrir SideSheetComposeDialog</string>
+</resources>
