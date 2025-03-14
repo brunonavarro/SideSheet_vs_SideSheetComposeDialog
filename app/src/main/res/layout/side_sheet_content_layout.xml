@@ -2,21 +2,25 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/Widget.Material3.SideSheet"
+    android:layout_margin="10dp"
+    app:layout_behavior="com.google.android.material.sidesheet.SideSheetBehavior"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <LinearLayout
         android:id="@+id/standard_side_sheet"
-        style="@style/Widget.Material3.SideSheet"
-        android:layout_width="256dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_behavior="com.google.android.material.sidesheet.SideSheetBehavior">
+        >
 
         <!-- Side sheet contents. -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="26sp"
             android:text="@string/title"/>
 
         <TextView
@@ -24,8 +28,9 @@
             android:layout_height="wrap_content"
             android:text="@string/supporting_text" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/sidesheet_button"
+            style="@style/Widget.Material3.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/action" />
